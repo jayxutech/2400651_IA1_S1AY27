@@ -1,3 +1,82 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Jayden Peterson: computing, creativity and personal growth."><title>Tables and forms practice | Jayden Peterson</title><link rel="stylesheet" href="../style.css"></head>
-<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">Jayden Peterson.</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="professional.html">Professional</a><a href="personality.html">Personality</a><a href="development.html">Development</a></nav></header><main id="main"><h1>Tables and forms</h1><div class="table-wrap"><table><caption>2400651 practice timetable</caption><thead><tr><th scope="col">Day</th><th scope="col">09:00</th><th scope="col">10:00</th></tr></thead><tbody><tr><th scope="row">Monday</th><td colspan="2">Web programming practice</td></tr><tr><th scope="row">Tuesday</th><td rowspan="2">Independent study</td><td>Lists</td></tr><tr><th scope="row">Wednesday</th><td>Tables</td></tr></tbody></table></div><section><h2>Hotel reservation practice</h2><p>Demonstration only. No booking is sent or stored.</p><form action="practice-forms.html" method="get"><fieldset><legend>Guest details</legend><label for="guest">Name (required)</label><input id="guest" name="guest" type="text" required><label for="email">Email (required)</label><input id="email" name="email" type="email" placeholder="name@example.com" required></fieldset><fieldset><legend>Stay details</legend><label for="arrival">Arrival</label><input id="arrival" name="arrival" type="date"><label for="room">Room type</label><select id="room" name="room"><option>Single</option><option>Double</option><option>Suite</option></select><label for="requests">Requests</label><textarea id="requests" name="requests" rows="3"></textarea></fieldset><button type="submit" disabled>Booking submission unavailable</button><button type="reset">Reset form</button></form></section></main><footer>Jayden Peterson · University of Technology, Jamaica · CIT2011 · 2026</footer></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel reservation form | Jayden Peterson</title>
+<link rel="stylesheet" href="../style.css">
+<style>legend { font-weight: bold; }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="index.html">Jayden Peterson.</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="professional.html">Professional</a>
+<a href="personality.html">Personality</a>
+<a href="development.html">Development</a>
+</nav>
+</header>
+<main id="main">
+<h1 style="text-align:center">ABC Hotel Reservation</h1>
+<p>Hotel reservation form exercise.</p>
+<form action="form-result.html" method="get">
+<div class="form-columns">
+<fieldset>
+<legend>Guest information</legend>
+<label for="first">First name (required)</label>
+<input id="first" type="text" required >
+<label for="last">Last name (required)</label>
+<input id="last" type="text" required >
+<label for="address1">Address 1</label>
+<input id="address1" type="text"  >
+<label for="address2">Address 2</label>
+<input id="address2" type="text"  >
+<label for="city">City</label>
+<input id="city" type="text"  >
+<label for="state">State / parish</label>
+<input id="state" type="text"  >
+<label for="zip">Postal code</label>
+<input id="zip" type="text"  >
+<label for="phone">Phone</label>
+<input id="phone" type="tel"  >
+<label for="email">Email (required)</label>
+<input id="email" type="email" required >
+</fieldset>
+<fieldset>
+<legend>Room information</legend>
+<label for="adults">Number of adult guests (required)</label>
+<input id="adults" type="number" required min="1" value="1">
+<label for="children">Number of child guests</label>
+<input id="children" type="number"  min="0" value="0">
+<label for="room">Room type</label>
+<select id="room">
+<option>Standard</option>
+<option>Double</option>
+<option>Suite</option>
+</select>
+<label for="arrival">Check-in date (required)</label>
+<input id="arrival" type="date" required >
+<label for="arrival-time">Check-in time</label>
+<input id="arrival-time" type="time"  >
+<label for="departure">Check-out date (required)</label>
+<input id="departure" type="date" required >
+<label for="departure-time">Check-out time</label>
+<input id="departure-time" type="time"  >
+<label for="instructions">Special instruction</label>
+<textarea id="instructions" rows="4">
+</textarea>
+</fieldset>
+</div>
+<button type="submit">Submit reservation form</button>
+<button type="reset">Reset</button>
+</form>
+<p>
+<a href="professional.html#labs">Return to my lab projects</a>
+</p>
+</main>
+<footer>Jayden Peterson · University of Technology, Jamaica · CIT2011 · 2026</footer>
+</body>
+</html>
+
