@@ -1,5 +1,5 @@
 /* Shared variables and readable, responsive layouts. */
-:root { --ink:#192620; --paper:#f6f4ed; --green:#235c45; --gold:#b78b36; --line:#d6ddd4; --white:#fff; font-family:Arial,Helvetica,sans-serif; font-size:16px; color:var(--ink); background:var(--paper); }
+:root { --ink:#192620; --paper:#f6f4ed; --green:#235c45; --gold:#b78b36; --line:#d6ddd4; --white:#fff; font-family:Arial,Helvetica,sans-serif; font-size:16px; font-weight:400; color:var(--ink); background:var(--paper); }
 * { box-sizing:border-box; }
 body { margin:0; line-height:1.7; }
 a { color:var(--green); text-underline-offset:4px; }
@@ -45,3 +45,25 @@ input[type="text"],input[type="email"],textarea { width:100%; }
 @media (max-width:949px) { .grid { grid-template-columns:1fr 1fr; } }
 @media (max-width:699px) { header { align-items:flex-start; flex-direction:column; } header,main,footer { padding:20px; } .hero,.grid { grid-template-columns:1fr; gap:20px; } h1 { font-size:2.5rem; } .card,article { padding:20px; } }
 @media print { nav,.skip,.notice { display:none; } body { background:white; } header,main,footer { padding:12px; } }
+
+/* Layout exercises and form columns. */
+.drone-photo { max-width:600px; margin:30px auto; }
+.form-columns { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+button { font:inherit; padding:8px 16px; cursor:pointer; }
+button:disabled { cursor:default; }
+input[type="number"],input[type="tel"],input[type="password"],input[type="date"],input[type="time"] { width:100%; }
+.five-boxes { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.five-boxes > div { border:2px solid; padding:20px; min-height:180px; }
+.five-boxes .box-one,.five-boxes .box-five { grid-column:1 / -1; min-height:110px; }
+.box-two { border-color:#b1ae6e; }
+.box-three { border-color:#c983e2; }
+.box-four { border-color:#a98989; }
+.box-five { border-color:#7b8de5; }
+.region-layout { display:grid; grid-template-columns:2fr 1fr; gap:12px; border:1px solid #ddd; padding:12px; }
+.region-layout > p,.region-top,.region-footer { grid-column:1 / -1; }
+.region-layout > div { border:2px solid; padding:20px; display:flex; align-items:center; }
+.region-top { min-height:140px; color:#d94dac; }
+.region-content { min-height:350px; color:#88cdbb; }
+.region-menu { color:#87bce4; }
+.region-footer { min-height:150px; color:#ef8c38; }
+@media (max-width:699px) { .form-columns,.five-boxes,.region-layout { grid-template-columns:1fr; } .region-content { min-height:180px; } .region-menu { min-height:100px; } }
