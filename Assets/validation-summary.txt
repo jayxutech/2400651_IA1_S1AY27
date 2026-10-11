@@ -1,0 +1,19 @@
+W3C validation - 11 October 2026
+
+index.html: Passed
+professional.html: Passed
+personality.html: Passed
+development.html: Passed
+2400651_wp_lab4_01.html: Passed
+2400651_wp_lab4_02.html: Passed
+account-form.html: Passed
+contact-form.html: Passed
+css-grid.html: Passed
+css-layout.html: Passed
+drone-shop.html: Passed
+form-result.html: Passed
+iframe-lab.html: Passed
+practice-forms.html: Passed
+practice-html.html: Passed
+practice-links.html: Passed
+style.css: Passed, no errors
