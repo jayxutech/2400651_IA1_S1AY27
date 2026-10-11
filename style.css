@@ -1,4 +1,4 @@
-/* Shared variables and readable, responsive layouts. */
+
 :root { --ink:#192620; --paper:#f6f4ed; --green:#235c45; --gold:#b78b36; --line:#d6ddd4; --white:#fff; font-family:Arial,Helvetica,sans-serif; font-size:16px; font-weight:400; color:var(--ink); background:var(--paper); }
 * { box-sizing:border-box; }
 body { margin:0; line-height:1.7; }
@@ -46,7 +46,7 @@ input[type="text"],input[type="email"],textarea { width:100%; }
 @media (max-width:699px) { header { align-items:flex-start; flex-direction:column; } header,main,footer { padding:20px; } .hero,.grid { grid-template-columns:1fr; gap:20px; } h1 { font-size:2.5rem; } .card,article { padding:20px; } }
 @media print { nav,.skip,.notice { display:none; } body { background:white; } header,main,footer { padding:12px; } }
 
-/* Layout exercises and form columns. */
+
 .drone-photo { max-width:600px; margin:30px auto; }
 .form-columns { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
 button { font:inherit; padding:8px 16px; cursor:pointer; }
