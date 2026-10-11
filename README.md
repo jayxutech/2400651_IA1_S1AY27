@@ -1,4 +1,4 @@
-# Jayden Peterson — CIT2011 portfolio
+# Jayden Peterson - CIT2011 portfolio
 
 Open Codes/index.html in a browser. Uses vanilla HTML5 and CSS3; no JavaScript or frameworks.
 
